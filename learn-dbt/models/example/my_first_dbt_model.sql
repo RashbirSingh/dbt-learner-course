@@ -6,7 +6,7 @@
 
     Try changing "table" to "view" below
 */
-
+-- post_hook= 'grant select on {{this}} to role analyst' -- just give access to this table
 {{ config(materialized='table', alias='first_model') }}
 
 with source_data as (
