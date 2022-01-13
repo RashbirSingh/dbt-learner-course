@@ -5,6 +5,11 @@
 name: 'learn_dbt'
 version: '1.0.0'
 config-version: 2
+#Define variables globally and not based on the model locally
+vars:
+  my_first_variable: TRUE
+  my_second_varibale: 2022
+  my_third_varibale: 1
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'learn_dbt_snowflake_db'
@@ -35,4 +40,4 @@ models:
   learn_dbt:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: table
+      materialized: table
