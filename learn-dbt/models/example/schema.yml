@@ -30,3 +30,4 @@ models:
           - not_null
   - name: cumulative_orsers_by_date
   - name: dates
+  - name: playing_with_tests
